@@ -5,6 +5,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://riggraz.github.io"
 github_username:  riggraz
 
+favicon: "./favicon.png" # relative path to site's favicon
+goat_counter: "riggraz" # put your GoatCounter name if you want to use GoatCounter analytics
+
 # Build settings
 remote_theme: riggraz/no-style-please
 
