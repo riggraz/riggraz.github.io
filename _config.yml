@@ -2,7 +2,7 @@ title: riggraz
 email: riccardo.graziosi97@gmail.com
 description: riggraz's thoughts
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://riggraz.github.io"
+url: "https://riggraz.dev"
 github_username:  riggraz
 
 favicon: "./favicon.png" # relative path to site's favicon
