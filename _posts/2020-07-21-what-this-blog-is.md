@@ -1,0 +1,71 @@
+---
+layout: post
+---
+
+Hey, it's riggraz.
+
+I finally started my personal blog. I'd like to take a few words to talk about the path that brought me here and what I am going to write on this blog. I divided this text in chapters because it is way more epic.
+
+## Index <!-- omit in toc -->
+- [Insecurity](#insecurity)
+- [Inspiration](#inspiration)
+- [Aspiration](#aspiration)
+- [Security](#security)
+
+## Insecurity
+
+I have notes more than one year old that contain ideas about blog posts: they are probably bad ideas, however they prove my desire for writing.
+
+The main reasons that made me procrastinate on starting a blog were the following:
+
+1. I was not sure I had something interesting to say
+2. I was not good at writing
+
+The thing is, both these facts are still valid today. Let's add the third reason:
+
+{:start="3"}
+3. I was worried about what my readers would think of me
+
+Yes, that was the main point. I was insecure. Let me explain.
+
+Part of my insecurity was due to perfectionism: in fact, for a relatively short period of my life, I was becoming more and more perfectionist. If I had to do something, I had to do it in the best way possible: for blogging that could mean studying English first, then taking a course on essay writing, then *maybe* start the blog. All this upfront boilerplate just takes too much time and effort, and is always pretty boring.
+
+Hopefully I understood – mainly thanks to hip hop music and its impulsive, direct, non-sophisticated lyrics – that I had to find a compromise between perfection and imperfection. That something really good can derive from a bit of imperfection.
+
+The fear of others' opinion was partially caused by perfectionism but also by other personal factors I don't want to bring up here. I just want to say that around 1 year ago I started, together with a team, [gambe.ro](https://gambe.ro/), an italian social bookmarking community for programmers. I already had the desire to write a blog, but I also remember that I'd not be comfortable publishing my articles there. Even though there were just a couple of hundreds users, I was afraid of their opinion. I was afraid that they could make fun of me.
+
+Now that I shifted my mindset a bit I feel pretty confident in exposing myself on that site and on the web in general, even though I don't know what I'll publish will have good reception.
+
+## Inspiration
+
+Aside from a personal interest in writing that has been growing inside me for the last few years, I took a lot of inspiration from other blogs during these years. I want to cite them here, in (a kind of) order of importance:
+
+- [Amjad Masad's blog](https://amasad.me/), because it was the first minimal blog I saw. I really appreciated his choice to focus on content first. However, what excited me the most was the fact that, in some articles, he mixed programming with philosophy. Since I like philosophy, I'd be lying if I didn't say that I'd have liked to come up with that idea first...
+- [arp242's blog](https://www.arp242.net/), from which I took the idea of outsourcing comments to bookmarking sites and linking to them in the articles. Moreover, I took inspiration from his line break's drawings.
+- [elly's personal page](http://tilde.town/~elly/), the main ispiration for the blog style. You could nearly say I stealed it!
+- [overreacted.io](https://overreacted.io/), Dan Abramov's blog, for the clean style of his blog.
+- [Peter Norvig's page](http://www.norvig.com/), in particular his essay [Teach Yourself Programming in Ten Years](http://www.norvig.com/21-days.html).
+- [JosephG's blog](https://josephg.com/blog/), in particular his essay [3 tribes of programming](https://josephg.com/blog/3-tribes/).
+- [0x46.net](https://0x46.net/), [jwlss.pw](https://jwlss.pw/), [michaelsafyan.com](https://www.michaelsafyan.com/) for the general style of their sites.
+
+## Aspiration
+
+With this blog I'd like to change the world.
+
+Jokes aside, with this blog I'd like to crystallize *my* world. I want to put here everything I do or think about computers, programming and alike, to create a place that defines myself in the realm of IT. When I'll be old, I want this place to summarize what I did.
+
+I want to write down my thoughts and ideas, but I also want to talk about the projects I develop.
+
+Thoughts will usually take the form of blog posts. Some will be short and naive, others will be long and elaborate. I also have ideas about certain forms of written content I have never seen applied in this field.
+
+On the other hand, to have a history of my past, present and future projects I decided to create what I like to call "**closet**". Esentially, it is just a page with a list of all the projects I did (even very small and stupid ones!) that have some importance to me. Every project will have a date and a small description, whereas for some projects I will also create ad-hoc pages to elaborate more on them. What I'd like to convey in the first place is not how a project works technically, but the story behind it, the feelings I got when working on it and so on.
+
+It may seem like this will be a very personal blog, aimed more at me than towards an audience. However, in my vision, this is far from the truth. It is true that the closet is more of a personal thing, but I also believe that some people can get inspired by the accounts of what I did in the past. Moreover, blog posts will contain thoughts and meditations about programming and the IT world in general that I think can be enjoyed by a large number of people.
+
+In fact, I'd like to provide quality content that can be appreciated by a wide audience. On the other hand, speaking of numbers, I don't have a lot of ambition. I probably won't have a lot of readers. However I'd be really happy if just a small number of readers become attached to the blog.
+
+## Security
+
+What I can say for sure is that the blog is now online. I can also say that I'll try to do my best in a non-perfectionist way. I know publications will be incostant. Even at the peak of my perfectionism I was incostant. In nearly everything I do I am incostant. There's just one thing I have been doing (pretty much) constantly for the past ten years and I still do today. That is programming, that is creating things.
+
+Stay tuned.
