@@ -4,9 +4,9 @@ title: GitHub Arctic Vault, Code and Memory
 slug: code-and-memory
 ---
 
-A couple of days ago I was surfing GitHub when I stumbled across something that caught my interest. A little notification box was telling me that I earned a badge for being an "Arctict Code Vault Contributor".
+A couple of days ago I was surfing GitHub when I stumbled across something that caught my interest. A little notification box was telling me that I earned a badge for being an "Arctic Code Vault Contributor".
 
-I had no idea what it was, so I googled it and found out about the [GitHub Archive Program](https://archiveprogram.github.com/). Basically, it is GitHub's plan to preserve open source software for a long long time. The Arctict Code Vault is just a part of the Archive Program, specifically aimed at storing data for 1000 years from now in a decommissioned coal mine near the North Pole.
+I had no idea what it was, so I googled it and found out about the [GitHub Archive Program](https://archiveprogram.github.com/). Basically, it is GitHub's plan to preserve open source software for a long long time. The Arctic Code Vault is just a part of the Archive Program, specifically aimed at storing data for 1000 years from now in a decommissioned coal mine near the North Pole.
 
 GitHub first put there the most important open source software, then, on 2 February 2020, added to the storage every active[^1] GitHub repository.
 
@@ -18,7 +18,7 @@ To date, this will be by far the most long-lasting memory of me. I hardly believ
 
 ---
 
-I want to draw a parallel with an historical tradition. Emperors used to build commemorative statues to show their power and to be remembered after their death. I am not an historian, however I suppose that a lot of these statues have either gone lost or destroyed or damaged. Probably some emperors are unknown to nowadays' history because everything about them got lost.
+I want to draw a parallel with a historical tradition. Emperors used to build commemorative statues to show their power and to be remembered after their death. I am not a historian, however I suppose that a lot of these statues have either gone lost or destroyed or damaged. Probably some emperors are unknown to nowadays' history because everything about them got lost.
 
 On the other hand, our code will survive for at least 10 centuries, probably much more. Powerful emperors' memories have been more ephemeral.
 
