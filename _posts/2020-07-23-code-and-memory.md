@@ -8,7 +8,7 @@ A couple of days ago I was surfing GitHub when I stumbled across something that 
 
 I had no idea what it was, so I googled it and found out about the [GitHub Archive Program](https://archiveprogram.github.com/). Basically, it is GitHub's plan to preserve open source software for a long long time. The Arctic Code Vault is just a part of the Archive Program, specifically aimed at storing data for 1000 years from now in a decommissioned coal mine near the North Pole.
 
-GitHub first put there the most important open source software, then, on 2 February 2020, added to the storage every active[^1] GitHub repository.
+GitHub first put the most important open source software there, then, on 2 February 2020, added to the storage every active[^1] GitHub repository.
 
 Some of my repositories are there.
 
@@ -18,7 +18,7 @@ To date, this will be by far the most long-lasting memory of me. I hardly believ
 
 ---
 
-I want to draw a parallel with a historical tradition. Emperors used to build commemorative statues to show their power and to be remembered after their death. I am not a historian, however I suppose that a lot of these statues have either gone lost or destroyed or damaged. Probably some emperors are unknown to nowadays' history because everything about them got lost.
+I want to draw a parallel with a historical tradition. Emperors used to build commemorative statues to show their power and to be remembered after their death. I am not a historian, however I suppose that a lot of these statues have either gone lost or destroyed or damaged. Probably some emperors are unknown today because everything about them got lost.
 
 On the other hand, our code will survive for at least 10 centuries, probably much more. Powerful emperors' memories have been more ephemeral.
 
@@ -45,9 +45,13 @@ Hey there!
 
 I'd love to hear your point of view on the topic: just [email me](mailto:riccardo.graziosi97@gmail.com) if you want to reach me out. If an interesting discussion arises I'll post it here in the discussion paragraph, so everyone can read it.
 
+This post has already been discussed on:
+
+- [lobste.rs](https://lobste.rs/s/sxsqrt/github_arctic_vault_code_memory)
+
 If you want to point out errors you can email me or [open an issue on GitHub](https://github.com/riggraz/riggraz.github.io/issues/new).
 
-This is the 1st post of the blog (the introduction post doesn't count, and anyway I start counting at 0 :P) and I'm pretty happy about it! I hope you liked it too.
+This is the first post of the blog (the introduction post doesn't count, and anyway I start counting at 0 :P) and I'm pretty happy about it! I hope you liked it too.
 
 Thanks for reading!
 
