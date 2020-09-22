@@ -39,7 +39,7 @@ The root cause is a lack of thinking. Obviously, not understanding the problem a
 
 Firstly, I know that the answer to my problem is probably somewhere on the web. We're all used to being spoon-fed by Stack Overflow. We're all used to having immediate access to tons of valuable information over the internet, so why not search there before overworking one's grey matter?
 
-Another reason is that, as a programmer, it may happen to face a lot of problems, maybe even problems not directly related to one's field. Even though each problem and its solution could be properly understood, there are a lot of reasons why one could decide not to do so. Examples are: hurry, incompetence, tiredness, slackness, etc.
+Another reason is that a programmer has to face lots of problems, sometimes not necessarily directly related to software development. Even though the problem at hand and its solution(s) should, ideally, be properly understood, there may be several reasons why one chooses not to do so, i.e. being in a hurry, pure and simple ineptitude, exhaustion, laziness etc.
 
 Whatever the reason, we therefore decide, more or less consciously, not to think.
 
