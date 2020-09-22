@@ -2,6 +2,10 @@
 layout: post
 title: The Stack Overflow Antipattern
 slug: stack-overflow-antipattern
+image:
+  path: /assets/images/comics/001-stack-overflow-antipattern.png
+  height: 1483
+  width: 746
 ---
 
 Sometimes programming can be frustrating. In the last few years I've noticed a recurrent pattern that drives me mad. I like to call it *Stack Overflow Antipattern*.
