@@ -80,6 +80,12 @@ Hey, thanks for reading all the way down here!
 
 I'd be more than happy to hear your personal experience with the Stack Overflow Antipattern. You can reach me out through [email](mailto:riccardo.graziosi97@gmail.com) or any other means you like. Interesting discussions will be posted in this section!
 
+Here you can find some comments about the post:
+
+- [lobste.rs](https://lobste.rs/s/kftyrd/stack_overflow_antipattern)
+- [r/coding](https://www.reddit.com/r/coding/comments/ixn3pk/the_stack_overflow_antipattern/)
+- [r/programming](https://www.reddit.com/r/programming/comments/ixn3n9/the_stack_overflow_antipattern/)
+
 Moreover, if you liked the article, consider subscribing to my [newsletter](https://tinyletter.com/riggraz) or [RSS feed](/feed.xml).
 
 Trivia: I had the idea of this post nearly one year ago and is the number one reason that made me open this blog. It should've been the first article, but, just as I started writing it, I got the inspiration for the [code and memory post](https://riggraz.dev/code-and-memory.html). Since the latter was simpler and shorter, I decided to write it first.
