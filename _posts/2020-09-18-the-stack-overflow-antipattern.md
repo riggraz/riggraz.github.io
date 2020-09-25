@@ -91,3 +91,8 @@ Moreover, if you liked the article, consider subscribing to my [newsletter](http
 Trivia: I had the idea of this post nearly one year ago and is the number one reason that made me open this blog. It should've been the first article, but, just as I started writing it, I got the inspiration for the [code and memory post](https://riggraz.dev/code-and-memory.html). Since the latter was simpler and shorter, I decided to write it first.
 
 I also want to mention that the comic strip was a last-minute idea. And, given my drawing skills, it was probably a bad idea.
+
+---
+{: data-content="updates"}
+
+After reading this blog post, [Synchro](https://github.com/Synchro) found the inspiration to write an article about another antipattern that he usually sees on Stack Overflow and alike. Since he is the maintainer of [PHPMailer](https://github.com/PHPMailer/PHPMailer), he has to answer a lot of questions on SO or GitHub, so he knows what he's talking about. The article is called [The Stack Overflow Antipattern, part 2](https://marcus.bointon.com/the-stack-overflow-antipattern-part-2/).
