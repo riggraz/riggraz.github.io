@@ -1,13 +1,13 @@
 title: riggraz
 email: riccardo.graziosi97@gmail.com
 description: riggraz's thoughts
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: ""
 url: "https://riggraz.dev"
 github_username:  riggraz
 
 permalink: /:slug.html
 
-favicon: "./favicon.png" # relative path to site's favicon
+favicon: "favicon.png"
 goat_counter: "riggraz" # put your GoatCounter name if you want to use GoatCounter analytics
 
 # Build settings
