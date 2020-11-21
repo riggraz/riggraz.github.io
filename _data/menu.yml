@@ -1,20 +1,11 @@
 entries:
   - title: me
-    url: false
     entries:
       - title: email
         url: mailto:riccardo.graziosi97@gmail.com
       - title: github
         url: http://github.com/riggraz/
-      - title: keep in touch
-        url: false
-        entries:
-          - title: newsletter
-            url: /newsletter.html
-          - title: rss
-            url: /feed.xml
+      - title: "keep in touch: <a href='/newsletter.html'>newsletter</a>, <a href='/feed.xml'>rss feed</a>"
 
   - title: thoughts
     post_list: true
-    url: false
-    entries: false
