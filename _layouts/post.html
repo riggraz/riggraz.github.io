@@ -2,8 +2,16 @@
 layout: default
 ---
 
-<a href="{{ site.url }}">{{ site.theme_config.back_home_text }}</a>
-<h1>{{ page.title }}</h1>
-{{ content }}
+{% include back_link.html %}
+
+<article>
+  <p class="post-meta">
+    <time datetime="{{ page.date }}">{{ page.date | date: site.theme_config.date_format }}</time>
+  </p>
+  
+  <h1>{{ page.title }}</h1>
+
+  {{ content }}
+</article>
 
 {% include newsletter.html %}
