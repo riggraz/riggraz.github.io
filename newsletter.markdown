@@ -1,3 +1,5 @@
 ---
-layout: post
+layout: page
 ---
+
+{% include newsletter.html %}
