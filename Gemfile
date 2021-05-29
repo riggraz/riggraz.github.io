@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem 'no-style-please', '= 0.4.0'
+gem 'no-style-please'
 
 gem "github-pages", "~> 206", group: :jekyll_plugins
 

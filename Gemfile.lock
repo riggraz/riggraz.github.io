@@ -249,7 +249,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (~> 206)
-  no-style-please (= 0.4.0)
+  no-style-please
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)
