@@ -248,7 +248,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  github-pages (~> 206)
+  github-pages
   no-style-please
   tzinfo (~> 1.2)
   tzinfo-data
