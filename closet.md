@@ -40,3 +40,17 @@ The Scratch account under which I published games was (and is) called riggraz: t
 Then, they day after the release of EXTREME FLAME, I decided to create a new Scratch account, probably because I felt I needed a fresh start. I called it ZackDRAGONX (the "Zack" part is a reference to Final Fantasy character [Zack Fair](https://en.wikipedia.org/wiki/Zack_Fair)).
 
 ## 2009-2010: the scratch days
+
+While I had released a lot of garbage on the Scratch website under the "riggraz" nickname, I probably decided it was time to publish only more deserving games with the "ZackDRAGONX" account. Moreover I had acquired the necessary skills to make some decent games.
+
+In the period between december 2009 and may 2010 I published 6 games:
+
+- (December 2009) [Blow it up](https://scratch.mit.edu/projects/820593/): in this game the player has to blow into the microphone of the computer in order to make a balloon explode. Of course, you don't have to actually blow but just to make the more noise possible in the microphone. Anyway, I think it was a cool concept.
+- (January 2010) [Balloon Shooter](https://scratch.mit.edu/projects/838260/): I must have been in love with balloons at that time. Actually, this game was inspired by an old game I used to play on my mother phone.
+- (April 2010) [Ball World](https://scratch.mit.edu/projects/964898/): a cool game about a ball.
+- (April 2010) [One Script, One Sprite: The Ball](https://scratch.mit.edu/projects/984328/): another cool game about a ball. It was actually made for a sort of challenge in the Scratch community: realize a game using only 1 sprite and 1 script. My most successful Scratch game.
+- (April 2010) [Run Joey Run!](https://scratch.mit.edu/projects/1006236/): I literally copied this game from another website. [Here](https://www.addictinggames.com/funny/run-joey-run) is the original game.
+- (May 2010) [IceCube's Quest](https://scratch.mit.edu/projects/1061803/): probably the game I spent more time developing. I was pretty happy with the result, even though it didn't get a lot of views and likes.
+
+This period was thrilling: creating games, releasing them on scratch.mit.edu and receiving likes and comments was exciting. I remember I was always trying to get the most likes as possible in order to reach the front page of the website, where the most played & loved games were featured.
+
