@@ -7,5 +7,5 @@ entries:
         url: http://github.com/riggraz/
       - title: "keep in touch: <a href='/newsletter.html'>newsletter</a>, <a href='/feed.xml'>rss feed</a>"
 
-  - title: thoughts
+  - title: posts
     post_list: true
