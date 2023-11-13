@@ -15,15 +15,17 @@ custom_js: dialogue-developer
 
 **Young boy**: hi, I'm developing my first video game! You see, I can draw characters and give them life through blocks of code! I've just finished, it's a game about a ball that must escape a ghost. Do you want to try it?
 
-**Developer**:
-<button id="yesInteractive">Yes</button>
-<button id="noInteractive">No</button>
-<span id="response"></span>
-
-*The sand reorganized itself, the shapes of a ghost and a ball appeared, and the former started chasing the latter.*
-
-<div id="gameCanvas">
+<div id="decision">
 </div>
+
+<div id="responseYes">
+    <i>The sand reorganized itself, the shapes of a ghost and a ball appeared, and the former started chasing the latter.</i>
+
+    <div id="gameCanvas">
+    </div>
+</div>
+
+<div id="afterGame">
 
 **Developer**: it was really fun, well done! You know, I write code as well, I'm a software developer.
 
@@ -47,4 +49,6 @@ custom_js: dialogue-developer
 
 **Developer**: you're so stupid. Coding will become a chore for you in no time! It won't be fun anymore and, moreover, you'll achieve nothing in your developer career! Nobody will use your software, so you'll have no fulfillment from it either! CODE IS JUST A TOOL TO REACH A GOAL!
 
-*As the developer stopped yelling, the young boy became really serious. He seemed absent-minded. After a while, the boy started crying. For reasons that goes beyond comprehension, tears were getting bigger each drop, and formed puddles on the sand that quickly became rivers running downhill in all directions. The developer was terrified and hopelessy tried to run away, but his body was already reached by these fast tears rivers. As he started sinking in the sand he hated so much, the developer took a last look at the offended boy. While he was disappearing under the sand, the developer was crying too.*
+*As the developer stopped yelling, the young boy became really serious. He seemed absent-minded. After a while, the boy started crying. For reasons that goes beyond comprehension, tears were getting bigger each drop, and formed puddles on the sand that quickly became rivers running downhill in all directions. Terrified, the developer hopelessy tried to run away, but his body was already caught by the fast tears rivers. As he started sinking in the sand he hated so much, the developer took a last look at the young boy: he was now ominously big. Just before disappearing under the sand, the developer was crying too.*
+
+</div>
