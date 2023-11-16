@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Dialogue Between a Developer and his Younger Self
+title: Dialogue Between a Developer and their Younger Self
 slug: dialogue-developer
 custom_js: dialogue-developer
 ---
 
-*A lone developer was walking uphill, his feet unstable over the fine-grained black sand of the terrain. Sweat droplets were falling from his face to the ground, forming tiny rivers that could not be seen.*
+*A lone developer was walking uphill, their feet unstable over the fine-grained black sand of the terrain. Sweat droplets were falling from their face to the ground, forming tiny rivers that could not be seen.*
 
 **Developer**: I hate this sand. It's all into my shoes.
 
@@ -18,14 +18,15 @@ custom_js: dialogue-developer
 <div id="decision">
 </div>
 
-<div id="responseYes">
+<div id="game">
     <i>The sand reorganized itself, the shapes of a ghost and a ball appeared, and the former started chasing the latter.</i>
+    <noscript><p>...</p></noscript>
 
-    <div id="gameCanvas">
-    </div>
+    <canvas id="gameCanvas">
+    </canvas>
 </div>
 
-<div id="afterGame">
+**Young boy**: haha! You played well, but you didn't beat my highscore of <span id="boyScore">0</span>!
 
 **Developer**: it was really fun, well done! You know, I write code as well, I'm a software developer.
 
@@ -49,6 +50,4 @@ custom_js: dialogue-developer
 
 **Developer**: you're so stupid. Coding will become a chore for you in no time! It won't be fun anymore and, moreover, you'll achieve nothing in your developer career! Nobody will use your software, so you'll have no fulfillment from it either! CODE IS JUST A TOOL TO REACH A GOAL!
 
-*As the developer stopped yelling, the young boy became really serious. He seemed absent-minded. After a while, the boy started crying. For reasons that goes beyond comprehension, tears were getting bigger each drop, and formed puddles on the sand that quickly became rivers running downhill in all directions. Terrified, the developer hopelessy tried to run away, but his body was already caught by the fast tears rivers. As he started sinking in the sand he hated so much, the developer took a last look at the young boy: he was now ominously big. Just before disappearing under the sand, the developer was crying too.*
-
-</div>
+*As the developer stopped yelling, the young boy became really serious. He seemed absent-minded. After a while, the boy started crying. For reasons that goes beyond comprehension, tears were getting bigger each drop, and formed puddles on the sand that quickly became rivers running downhill in all directions. Terrified, the developer hopelessy tried to run away, but their body was already caught by the fast tears rivers. As he started sinking in the sand he hated so much, the developer took a last look at the young boy: he was now ominously big. Just before disappearing under the sand, the developer was crying too.*

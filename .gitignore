@@ -4,3 +4,4 @@ vendor
 .jekyll-cache
 .jekyll-metadata
 docker-compose.yml
+.DS_Store
