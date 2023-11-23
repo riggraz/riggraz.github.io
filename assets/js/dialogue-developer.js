@@ -113,7 +113,7 @@ function askQuestion(n) {
     // Ask again
     const boyPlea = document.createElement('p');
     if (n !== boyPleas.length - 1)
-      boyPlea.innerHTML = '<b>Young boy</b>: ' + boyPleas[n];
+      boyPlea.innerHTML = '<b>Youngster</b>: ' + boyPleas[n];
     else
       boyPlea.innerHTML = '<i>' + boyPleas[n] + '</i>';
     decisionDiv.appendChild(boyPlea);
