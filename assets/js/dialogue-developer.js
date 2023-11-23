@@ -1,5 +1,8 @@
-let ghostSprite = new Image();
-ghostSprite.src = '/assets/images/dialogue-developer/ghost.png';
+const ghostSpriteL = new Image();
+ghostSpriteL.src = '/assets/images/dialogue-developer/ghost-l.png';
+const ghostSpriteR = new Image();
+ghostSpriteR.src = '/assets/images/dialogue-developer/ghost-r.png';
+let ghostSprite = ghostSpriteL;
 
 let ballSprite = new Image();
 ballSprite.src = '/assets/images/dialogue-developer/ball.png'
@@ -26,6 +29,11 @@ gameCanvas.style.border = 'thin solid black';
 gameCanvas.style.display = 'block';
 gameCanvas.style.margin = '32px auto';
 const ctx = gameCanvas.getContext('2d');
+
+// Game elements
+let ball = { x: 50, y: 50, width: 56, height: 56, radius: 10 };
+let ghost = { width: 72, height: 56, speed: 1 };
+let timer = 0;
 
 function scaleGameCanvas() {
   const gameCanvasAR = 4/3;
@@ -75,10 +83,19 @@ function askQuestion(n) {
     gameDiv.style.display = 'block';
     scaleGameCanvas();
 
+    // Set initial position for ghost
+    ghost.x = gameCanvas.width - ghost.width * 1.5;
+    ghost.y = gameCanvas.height - ghost.height * 1.5;
+
     let gameStarted = false;
-    ctx.font = '20px Arial';
+    ctx.font = '25px Arial';
     ctx.textAlign = 'center';
-    ctx.fillText('Hover mouse to start playing', gameCanvas.width / 2, gameCanvas.height / 2);
+    draw();
+    if ('ontouchstart' in window)
+      ctx.fillText('Tap and drag to play', gameCanvas.width / 2, gameCanvas.height / 2);
+    else
+      ctx.fillText('Hover mouse to play', gameCanvas.width / 2, gameCanvas.height / 2);
+  
     gameCanvas.addEventListener('mouseover', function(e) {
       if (!gameStarted) {
         ctx.clearRect(0, 0, gameCanvas.width, gameCanvas.height);
@@ -107,37 +124,85 @@ function askQuestion(n) {
   decisionDiv.appendChild(developerAnswer);
 }
 
+function draw() {
+  ctx.clearRect(0, 0, gameCanvas.width, gameCanvas.height);
+
+  // Ball
+  ctx.drawImage(ballSprite, ball.x, ball.y, ball.width, ball.height);
+
+  // Ghost
+  ctx.drawImage(ghostSprite, ghost.x, ghost.y, ghost.width, ghost.height);
+
+  // Timer
+  ctx.font = '25px Arial';
+  ctx.fillText((timer / 1000).toFixed(2), 50, 40);
+}
+
 function play() {
-  let ball = { x: 0, y: 0, width: 56, height: 56, radius: 10 };
-  let ghost = { x: 200, y: 200, width: 72, height: 56, speed: 1 };
-  let timer = 0;
   let gameInterval;
 
   function handleBallMove(e) {
+    const maxMovement = 100;
+    
+    if (e.type === 'touchmove')
+      e.preventDefault(); // disable page scroll on touchscreens
+
     let rect = gameCanvas.getBoundingClientRect();
-    ball.x = e.clientX - rect.left - ball.width / 2;
-    ball.y = e.clientY - rect.top - ball.height / 2;
+    let clientX, clientY;
+
+    if (e.type === 'touchmove') {
+      clientX = e.touches[0].clientX;
+      clientY = e.touches[0].clientY;
+    } else {
+      clientX = e.clientX;
+      clientY = e.clientY;
+    }
+
+    let newX = clientX - rect.left - ball.width / 2;
+    let newY = clientY - rect.top - ball.height / 2;
+
+    let dx = newX - ball.x;
+    let dy = newY - ball.y;
+
+    if (Math.abs(dx) > maxMovement) {
+      newX = ball.x + (dx > 0 ? maxMovement : -maxMovement);
+    }
+  
+    if (Math.abs(dy) > maxMovement) {
+      newY = ball.y + (dy > 0 ? maxMovement : -maxMovement);
+    }
+
+    ball.x = newX;
+    ball.y = newY;
   }
 
-  gameCanvas.addEventListener('mousemove', handleBallMove);
-  gameCanvas.addEventListener('touchmove', handleBallMove);
+  gameCanvas.addEventListener('mousemove', handleBallMove, { passive: false });
+  gameCanvas.addEventListener('touchmove', handleBallMove, { passive: false });
 
   function updateGhost() {
     // Update ghost speed
-    ghost.speed = Math.ceil(timer / 500) + 1;
+    ghost.speed = Math.ceil(timer / 8000) + 1;
     let dx = ball.x - ghost.x;
     let dy = ball.y - ghost.y;
     let distance = Math.sqrt(dx * dx + dy * dy);
+    
+    // Update ghost position
     ghost.x += dx / distance * ghost.speed;
     ghost.y += dy / distance * ghost.speed;
+
+    // Flip the image based on the direction of the ball
+    if (ball.x < ghost.x)
+      ghostSprite = ghostSpriteL;
+    else
+      ghostSprite = ghostSpriteR;
   }
 
   function checkCollision() {
     let dx = Math.abs(ball.x + ball.width / 2 - (ghost.x + ghost.width / 2));
     let dy = Math.abs(ball.y + ball.height / 2 - (ghost.y + ghost.height / 2));
 
-    if (dx < (ball.width / 2 + ghost.width / 2)) {
-      if (dy < (ball.height / 2 + ghost.height / 2)) {
+    if (dx < (ball.width / 3 + ghost.width / 3)) {
+      if (dy < (ball.height / 3 + ghost.height / 3)) {
         return true;
       }
     }
@@ -145,29 +210,19 @@ function play() {
     return false;
   }
 
-  function draw() {
-    ctx.clearRect(0, 0, gameCanvas.width, gameCanvas.height);
-
-    // Ball
-    ctx.drawImage(ballSprite, ball.x, ball.y, ball.width, ball.height);
-
-    // Ghost
-    ctx.drawImage(ghostSprite, ghost.x, ghost.y, ghost.width, ghost.height);
-
-    // Timer
-    ctx.font = '20px Arial';
-    ctx.fillText(timer, 30, 30);
-  }
-
   function update() {
     updateGhost();
     draw();
-    timer++;
+    timer += 1000 / 60;
     if (checkCollision()) {
       clearInterval(gameInterval);
 
+      ctx.font = '50px Arial';
+      ctx.textAlign = 'center';
+      ctx.fillText('Game Over!', gameCanvas.width / 2, gameCanvas.height / 2);
+
       const boyScore = document.getElementById('boyScore');
-      boyScore.innerHTML = timer + 9; // sorry :)
+      boyScore.innerHTML = Math.ceil((timer / 1000) + 0.00000001).toFixed(2); // sorry :)
 
       // Show all successive paragraphs of text
       let show = false;
