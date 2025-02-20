@@ -1,8 +1,0 @@
-entries:
-  - title: me
-    entries:
-      - title: "<a href='mailto:riccardo.graziosi97@gmail.com'>email</a> | <a href='http://github.com/riggraz/'>github</a>"
-      - title: "keep in touch: <a href='/newsletter.html'>newsletter</a> | <a href='/feed.xml'>rss feed</a>"
-
-  - title: posts
-    post_list: true

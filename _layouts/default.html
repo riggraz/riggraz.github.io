@@ -30,6 +30,25 @@
           &:before { content: '/ / / ' }
           &:after { content: attr(data-content) ' / / /' }
         }
+
+        header { text-align: center; }
+
+        ul.postList {
+          width: fit-content;
+          margin: 0 auto;
+          padding: 0;
+        }
+
+        ul.postList li {
+          display: flex;
+          gap: 16px;
+        }
+
+        ul.postList li span {
+          width: 80px;
+          text-align: right;
+          flex-shrink: 0;
+        }
      </style>
 
   </body>
