@@ -86,8 +86,6 @@ Here you can find some comments about the post:
 - [r/coding](https://www.reddit.com/r/coding/comments/ixn3pk/the_stack_overflow_antipattern/)
 - [r/programming](https://www.reddit.com/r/programming/comments/ixn3n9/the_stack_overflow_antipattern/)
 
-Moreover, if you liked the article, consider subscribing to my [newsletter](https://tinyletter.com/riggraz) or [RSS feed](/feed.xml).
-
 Trivia: I had the idea of this post nearly one year ago and is the number one reason that made me open this blog. It should've been the first article, but, just as I started writing it, I got the inspiration for the [code and memory post](https://riggraz.dev/code-and-memory.html). Since the latter was simpler and shorter, I decided to write it first.
 
 I also want to mention that the comic strip was a last-minute idea. And, given my drawing skills, it was probably a bad idea.
