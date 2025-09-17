@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ChatGPT Makes Searching the Web Great Again
-slug: chatgpt-web-search-great-again
+title: ChatGPT as a Digital Wellbeing Tool
+slug: chatgpt-digital-wellbeing
 ---
 
 As an Italian citizen, I feel obliged to follow our most important music festival: Sanremo Music Festival. However, a typical Sanremo night broadcasts on TV from 8:30PM to 2:00AM. That's more than 5 hours. Moreover, music performances are continuously interrupted by some boring speeches and sometimes speeches are interrupted by boring music performances.
