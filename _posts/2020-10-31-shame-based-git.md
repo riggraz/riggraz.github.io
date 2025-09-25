@@ -25,6 +25,4 @@ Hey, you have come to the end of this short post!
 
 What do you think about it? Have you followed a shame-based learning method for Git? I'd love to hear from you: if you feel like it, just reach me out through [email](mailto:riccardo.graziosi97@gmail.com). As always, interesting discussions will be posted in this section.
 
-Moreover, I want to remind you of subscribing to my [newsletter](https://tinyletter.com/riggraz) or [RSS feed](/feed.xml), in case you don't want to miss future posts.
-
 Thanks for reading, see you!

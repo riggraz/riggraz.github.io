@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: "en" }}">
+  {%- include head.html -%}
+  <body a="{{ site.theme_config.appearance | default: "auto" }}">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        {{ content }}
+      </div>
+    </main>
+
+    {%-if site.goat_counter and jekyll.environment == "production"-%}
+      {%-include goat_counter.html-%}
+    {%-endif-%}
+
+    {% if page.custom_js %}
+      {% for js_file in page.custom_js %}
+        <script type="text/javascript" src="{{ site.baseurl }}/assets/js/{{ js_file }}.js"></script>
+      {% endfor %}
+    {% endif %}
+
+    <!-- My custom CSS styles -->
+     <style>
+        body {
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          font-size: 19px;
+          line-height: 1.6em;
+        }
+
+        hr {
+          &:before { content: '/ / / ' }
+          &:after { content: attr(data-content) ' / / /' }
+        }
+
+        header { text-align: center; }
+
+        ul.postList {
+          width: fit-content;
+          margin: 0 auto;
+          padding: 0;
+        }
+
+        ul.postList li {
+          display: flex;
+          gap: 16px;
+        }
+
+        ul.postList li span {
+          width: 80px;
+          text-align: right;
+          flex-shrink: 0;
+        }
+     </style>
+
+  </body>
+</html>
