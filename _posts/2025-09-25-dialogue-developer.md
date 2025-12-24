@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Dialogue Between a Developer and their Younger Self
+title: Dialogue Between a Developer and His Younger Self
 slug: dialogue-developer
 custom_js: dialogue-developer
 ---
 
-*A lone developer was walking uphill, their feet unstable over the fine-grained black sand of the terrain. Sweat droplets were falling from their face to the ground, forming tiny rivers that went unnoticed.*
+*A lone developer was walking uphill, his feet unstable on the fine-grained black sand of the terrain. Sweat droplets were falling from his face to the ground, forming tiny rivers that went unnoticed.*
 
-*The sky was as dark as the annoying sand, except for a few distant, colorful planets. The space was filled with a peculiar tension, like every inanimate object or particle was waiting for something to happen. Falling stars appeared as fast as they disappeared. Undoubtedly, it was a special night.*
+*The sky was as dark as the annoying sand, except for a few distant, colorful planets. The space was filled with a peculiar tension, as if every inanimate object or particle was waiting for something to happen. Falling stars appeared as fast as they disappeared. Undoubtedly, it was a special night.*
 
-**Developer**: I hate this sand. It's all into my shoes.
+**Developer**: I hate this sand. It's all in my shoes.
 
-*A few minutes later, as the slope of the hill got gentler, the developer saw a small figure curved on the ground frenetically moving their hands. As the developer got closer, they recognized it was a kid playing with the sand.*
+*A few minutes later, as the slope of the hill got gentler, the developer saw a small figure curved on the ground frenetically moving their hands. As the developer got closer, he recognized it was a kid playing with the sand.*
 
 **Developer**: Hey there, what're you up to?
 
@@ -42,11 +42,11 @@ custom_js: dialogue-developer
 
 **Kid**: Oh, interesting!! And which is the best language to learn?
 
-**Developer**: C is always a good starting point. But there is no correct answer: you can also stick with Visual Basic or Scratch until you feel very confident with it.
+**Developer**: C is always a good starting point. But there is no correct answer: you can also stick to Visual Basic or Scratch until you feel very confident.
 
 **Kid**: And how many programming languages do you know??
 
-**Developer**: Well, I don't count them... probably around 10. Anyway, you shouldn't focus on learning as much languages as possible.
+**Developer**: Well, I don't count them... probably around 10, but only a few of them very well. Anyway, you shouldn't focus on learning as many languages as possible.
 
 **Kid**: Only 10?? At your age I will know a lot more for sure!
 
@@ -54,19 +54,38 @@ custom_js: dialogue-developer
 
 **Kid**: What are libraries and frameworks?
 
-**Developer**: To keep it simple, they're code written by someone else that you use to build software faster.
+**Developer**: Basically they're code written by someone else that you use to build software faster.
 
 **Kid**: What?! That sounds really boring! I don't want to use the code written by someone else, I want to be the one writing the code!
 
 **Developer**: Actually...
 
-*The conversation went on. Maybe it was the kid stubbornness, maybe it was the sand in the shoes. Maybe it was both, maybe it was none: but the developer grew angrier and angrier.*
+*The conversation went on. Maybe it was the kid's stubbornness, maybe it was the sand in the shoes. Maybe it was both, maybe it was none: but the developer grew angrier and angrier.*
 
-**Developer**: Listen, kid.
+**Kid**: So, yeah, I want to build a new game just like Super Mario—
 
+**Developer**: Wait, what's the point? You're just copying games that already exist! You should strive to create something new and unique, something that others will truly enjoy!
 
-*As the developer was yelling, the kid became serious. He seemed absent-minded. After a while, the young person started crying. For reasons that goes beyond comprehension, tears were getting bigger each drop, and formed puddles on the sand that quickly became rivers running downhill in all directions.*
+**Kid**: Maybe I can try and if I get bored I will switch to some other game!
 
-*Terrified, the developer hopelessy tried to run away, but their body was already caught by the fast rivers of tears. As he started sinking in the sand he hated so much, the developer took a last look at the kid: they were now ominously big.* 
+*The developer laughed.*
+
+**Developer**: That's a great way to waste your time! You're one of those people who start projects and abandon them! You see, I also used to be that way, but I've changed. Now I finish every project I start, and I refine it in order to make it public and useful to other people!
+
+**Kid**: That sounds—
+
+**Developer**: DON'T INTERRUPT ME! Also I don't write everything from scratch like you do! I use libraries! I use LLMs to write code! I focus on the idea and offload the heavy programming work as much as possible! That's what it means to be a programmer, a real programmer!
+
+**Kid**: ...
+
+**Developer**: Come on, say what you wanted to say!
+
+**Kid**: ...
+
+**Developer**: SAY IT! WERE YOU GOING TO INSULT ME?! I DARE YOU...
+
+*As the developer was yelling, the kid became serious. He seemed absent-minded. After a while, the young person started crying. For reasons that go beyond comprehension, tears grew larger with each drop, and formed puddles on the sand that quickly became rivers running downhill in all directions.*
+
+*Terrified, the developer hopelessly tried to run away, but his body was already caught by fast rivers of tears. As he started sinking in the sand, the developer took a last look at the kid: he was now ominously big.* 
 
 *Just before disappearing under the sand, the developer was crying too.*
