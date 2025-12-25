@@ -11,6 +11,8 @@ const backLinks = allLinks.filter(link => link.textContent.trim().toLowerCase().
 backLinks[1].style.display = 'none';
 
 // Game data
+let gameStarted = false;
+
 const ghostSpriteL = new Image();
 ghostSpriteL.src = '/assets/images/dialogue-developer/ghost-l.png';
 const ghostSpriteR = new Image();
@@ -105,17 +107,10 @@ function askQuestion(n) {
     ghost.x = gameCanvas.width - ghost.width * 1.5;
     ghost.y = 50;
 
-    let gameStarted = false;
     ctx.font = '25px Arial';
     ctx.textAlign = 'center';
 
-    gameCanvas.addEventListener('ontouchstart' in window ? 'touchstart' : 'mouseover', function(e) {
-      if (!gameStarted) {
-        draw();
-        play();
-        gameStarted = true;
-      }
-    });
+    gameCanvas.addEventListener('ontouchstart' in window ? 'touchstart' : 'mouseover', startGame);
 
     gameCanvas.scrollIntoView({
       behavior: "auto",
@@ -163,6 +158,14 @@ function askQuestion(n) {
   decisionDiv.appendChild(developerAnswer);
 }
 
+function startGame() {
+  if (!gameStarted) {
+    draw();
+    play();
+    gameStarted = true;
+  }
+}
+
 function draw() {
   ctx.clearRect(0, 0, gameCanvas.width, gameCanvas.height);
 
@@ -177,43 +180,43 @@ function draw() {
   ctx.fillText((timer / 1000).toFixed(2), 50, 40);
 }
 
+function handleBallMove(e) {
+  const maxMovement = 100;
+  
+  if (e.type === 'touchmove')
+    e.preventDefault(); // disable page scroll on touchscreens
+
+  let rect = gameCanvas.getBoundingClientRect();
+  let clientX, clientY;
+
+  if (e.type === 'touchmove') {
+    clientX = e.touches[0].clientX;
+    clientY = e.touches[0].clientY;
+  } else {
+    clientX = e.clientX;
+    clientY = e.clientY;
+  }
+
+  let newX = clientX - rect.left - ball.width / 2;
+  let newY = clientY - rect.top - ball.height / 2;
+
+  let dx = newX - ball.x;
+  let dy = newY - ball.y;
+
+  if (Math.abs(dx) > maxMovement) {
+    newX = ball.x + (dx > 0 ? maxMovement : -maxMovement);
+  }
+
+  if (Math.abs(dy) > maxMovement) {
+    newY = ball.y + (dy > 0 ? maxMovement : -maxMovement);
+  }
+
+  ball.x = newX;
+  ball.y = newY;
+}
+
 function play() {
   let gameInterval;
-
-  function handleBallMove(e) {
-    const maxMovement = 100;
-    
-    if (e.type === 'touchmove')
-      e.preventDefault(); // disable page scroll on touchscreens
-
-    let rect = gameCanvas.getBoundingClientRect();
-    let clientX, clientY;
-
-    if (e.type === 'touchmove') {
-      clientX = e.touches[0].clientX;
-      clientY = e.touches[0].clientY;
-    } else {
-      clientX = e.clientX;
-      clientY = e.clientY;
-    }
-
-    let newX = clientX - rect.left - ball.width / 2;
-    let newY = clientY - rect.top - ball.height / 2;
-
-    let dx = newX - ball.x;
-    let dy = newY - ball.y;
-
-    if (Math.abs(dx) > maxMovement) {
-      newX = ball.x + (dx > 0 ? maxMovement : -maxMovement);
-    }
-  
-    if (Math.abs(dy) > maxMovement) {
-      newY = ball.y + (dy > 0 ? maxMovement : -maxMovement);
-    }
-
-    ball.x = newX;
-    ball.y = newY;
-  }
 
   gameCanvas.addEventListener('mousemove', handleBallMove, { passive: false });
   gameCanvas.addEventListener('touchmove', handleBallMove, { passive: false });
@@ -262,6 +265,12 @@ function play() {
 
       const boyScore = document.getElementById('boyScore');
       boyScore.innerHTML = Math.ceil((timer / 1000) + 0.00000001).toFixed(2); // sorry :)
+
+      // Enable scrolling the page by tapping on the canvas
+      gameCanvas.style.touchAction = 'pan-y';
+      gameCanvas.removeEventListener('ontouchstart' in window ? 'touchstart' : 'mouseover', startGame);
+      gameCanvas.removeEventListener('mousemove', handleBallMove);
+      gameCanvas.removeEventListener('touchmove', handleBallMove);
 
       // Restore game canvas margin bottom
       gameDiv.style.marginBottom = '0px';
