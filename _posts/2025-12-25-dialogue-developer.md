@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dialogue Between a Developer and His Younger Self
+title: Dialogue Between a Developer and a Kid
 slug: dialogue-developer
 custom_js: dialogue-developer
 ---
@@ -84,7 +84,7 @@ custom_js: dialogue-developer
 
 **Developer**: SAY IT! WERE YOU GOING TO INSULT ME?! I DARE YOU...
 
-*As the developer was yelling, the kid became serious. He seemed absent-minded. After a while, the young person started crying. For reasons that go beyond comprehension, tears grew larger with each drop, and formed puddles on the sand that quickly became rivers running downhill in all directions.*
+*As the developer was yelling, the kid became serious. He seemed absent-minded. After a while, the kid started crying. For reasons that go beyond comprehension, tears grew larger with each drop, and formed puddles on the sand that quickly became rivers running downhill in all directions.*
 
 *Terrified, the developer hopelessly tried to run away, but his body was already caught by fast rivers of tears. As he started sinking in the sand, the developer took a last look at the kid: he was now ominously big.* 
 
