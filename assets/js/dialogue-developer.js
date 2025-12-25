@@ -1,3 +1,16 @@
+// i swear i usually write better code...
+
+// Hide newsletter section and bottom back link button
+const newsletterHr = document.getElementById('newsletter-hr');
+const newsletter = document.getElementById('newsletter');
+newsletterHr.style.display = 'none';
+newsletter.style.display = 'none';
+
+const allLinks = Array.from(document.querySelectorAll('a'));
+const backLinks = allLinks.filter(link => link.textContent.trim().toLowerCase().includes('back'));
+backLinks[1].style.display = 'none';
+
+// Game data
 const ghostSpriteL = new Image();
 ghostSpriteL.src = '/assets/images/dialogue-developer/ghost-l.png';
 const ghostSpriteR = new Image();
@@ -31,7 +44,7 @@ gameCanvas.style.margin = '32px auto';
 const ctx = gameCanvas.getContext('2d');
 
 // Game elements
-let ball = { x: 50, y: 50, width: 56, height: 56, radius: 10 };
+let ball = { width: 56, height: 56, radius: 10 };
 let ghost = { width: 72, height: 56, speed: 1 };
 let timer = 0;
 
@@ -81,28 +94,54 @@ function askQuestion(n) {
     
     // Start game
     gameDiv.style.display = 'block';
+    gameDiv.style.marginBottom = '128px';
     scaleGameCanvas();
+
+    // Set initial position for ball
+    ball.x = 50;
+    ball.y = gameCanvas.height - ball.height * 1.5;
 
     // Set initial position for ghost
     ghost.x = gameCanvas.width - ghost.width * 1.5;
-    ghost.y = gameCanvas.height - ghost.height * 1.5;
+    ghost.y = 50;
 
     let gameStarted = false;
     ctx.font = '25px Arial';
     ctx.textAlign = 'center';
-    draw();
-    if ('ontouchstart' in window)
-      ctx.fillText('Tap and drag to play', gameCanvas.width / 2, gameCanvas.height / 2);
-    else
-      ctx.fillText('Hover mouse to play', gameCanvas.width / 2, gameCanvas.height / 2);
-  
-    gameCanvas.addEventListener('mouseover', function(e) {
+
+    gameCanvas.addEventListener('ontouchstart' in window ? 'touchstart' : 'mouseover', function(e) {
       if (!gameStarted) {
-        ctx.clearRect(0, 0, gameCanvas.width, gameCanvas.height);
+        draw();
         play();
         gameStarted = true;
       }
     });
+
+    gameCanvas.scrollIntoView({
+      behavior: "auto",
+      block: "start",
+      inline: "nearest"
+    });
+
+    draw();
+
+    if ('ontouchstart' in window)
+      ctx.fillText('Tap and drag to play', gameCanvas.width / 2, gameCanvas.height / 2);
+    else
+      ctx.fillText('Hover mouse to play', gameCanvas.width / 2, gameCanvas.height / 2);
+
+    // Sometimes in Safari the canvas is blank
+    // This timeout forces a redraw of the canvas
+    setTimeout(function() {
+      if (!gameStarted) {
+        draw();
+
+        if ('ontouchstart' in window)
+          ctx.fillText('Tap and drag to play', gameCanvas.width / 2, gameCanvas.height / 2);
+        else
+          ctx.fillText('Hover mouse to play', gameCanvas.width / 2, gameCanvas.height / 2);
+      }
+    }, 100);
   };
 
   noButton.onclick = function() {
@@ -224,6 +263,8 @@ function play() {
       const boyScore = document.getElementById('boyScore');
       boyScore.innerHTML = Math.ceil((timer / 1000) + 0.00000001).toFixed(2); // sorry :)
 
+      // Restore game canvas margin bottom
+      gameDiv.style.marginBottom = '0px';
       // Show all successive paragraphs of text
       let show = false;
       for (let i = 0; i < gameDiv.parentNode.children.length; i++) {
